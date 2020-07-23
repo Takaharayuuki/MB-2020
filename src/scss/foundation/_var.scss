@@ -1,0 +1,54 @@
+	// -----
+// 設定
+// -----
+
+// 色
+$color-main: #3f51b5; // ベース色
+$color-active: #e81919; // アクティブ色
+$color-background-base: #FFFFFFE6; // 背景色
+$color-text-base: #301F1B; // テキスト色
+$hover-opacity: 0.8; // 透過度
+$base-red: #C63205;
+$base-white: #FFFFFF;
+$base-black: #333333;
+$menu-color: #421F15;
+
+// レイアウト幅
+$layout-width-canvas: 1366px;
+$layout-width-inner: 810px;
+
+// 余白
+$padding-tab: 24px;
+$padding-sp: 16px;
+
+// ブレークポイント
+$breakpoints: (
+	"sp": "(max-width: 767px)",
+	"tab-only": "(min-width: 768px) and (max-width: #{$layout-width-inner - 1px})",
+	"tab": "(max-width: #{$layout-width-inner - 1px})",
+	"pc": "(min-width: #{$layout-width-inner})",
+);
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+	@media #{map-get($breakpoints, $breakpoint)} {
+		@content;
+	}
+}
+
+.l-inner-wrap {
+	width: $layout-width-inner;
+	max-width: 100%;
+	margin: 0 auto;
+	height: inherit;
+
+	@include mq('tab') {
+		padding-left: $padding-tab;
+		padding-right: $padding-tab;
+	}
+
+	@include mq('sp') {
+		padding-left: $padding-sp;
+		padding-right: $padding-sp;
+	}
+}

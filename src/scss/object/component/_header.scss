@@ -1,0 +1,25 @@
+.c-header-nav {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__listItem {
+    display: inline-block;
+    text-align: center;
+    margin-right: 30px;
+
+    &--ruby {
+      font-size: 12px;
+    }
+
+    &--menu {
+      font-size: 22px;
+    }
+
+    &:hover {
+      opacity: $hover-opacity;
+    }
+  }
+}

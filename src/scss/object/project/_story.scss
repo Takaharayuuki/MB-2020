@@ -1,0 +1,122 @@
+/* -------------------------------------------------
+  p-story
+---------------------------------------------------- */
+
+.p-story {
+  &__wrap {
+    color: #fff;
+    background-color: #000000;
+  }
+
+  &__inner {
+    max-width: 810px;
+    margin: auto;
+  }
+
+  &__innersecond {
+    max-width: 810px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__topContent {
+    padding-top: 58px;
+    height: 635px;
+    width: 100%;
+    background: url(../img/story_bg_01.png);
+    background-size: cover;
+
+    &--header {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 88px;
+    }
+
+    &__title > h1 {
+      font-size: 45px;
+    }
+
+    &__title > p {
+      font-size: 16.7px;
+    }
+
+    &__day {
+      font-size: 26px;
+    }
+
+    &--bottom {
+      &--breadclumb {
+        font-size: 12px;
+        margin-bottom: 27px;
+      }
+
+      &--heading {
+        display: block;
+        margin: auto;
+        font-size: 43px;
+        width: 86px;
+        margin-bottom: 35px;
+      }
+
+      &--container {
+        display: flex;
+        justify-content: flex-end;
+
+        &--text {
+          font-size: 12px;
+          max-width: 389px;
+          max-height: 205px;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+
+  &__mainContents {
+    &--img {
+      background: url(../img/story_bg_02.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 200px -50px;
+      height: 325px;
+    }
+
+    &--secondImg {
+      background: url(../img/story_bg_03.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: -400px -400px;
+      height: 325px;
+    }
+
+    &--thirdImg {
+      background: url(../img/story_bg_04.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: 200px -400px;
+      height: 325px;
+    }
+
+    &--text {
+      padding: 60px 0;
+      font-size: 12px;
+      max-width: 389px;
+      max-height: 285px;
+      overflow: hidden;
+    }
+
+    &--secondText {
+      padding: 60px 0;
+      font-size: 12px;
+      max-width: 389px;
+      max-height: 285px;
+      overflow: hidden;
+    }
+  }
+
+  &__black {
+    color: black;
+  }
+}

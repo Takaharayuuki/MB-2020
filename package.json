@@ -22,7 +22,8 @@
     "gulp-sass": "^4.1.0",
     "gulp-sass-glob": "^1.1.0",
     "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-optipng": "^8.0.0"
+    "imagemin-optipng": "^8.0.0",
+    "prettier": "2.0.5"
   },
   "dependencies": {
     "gulp": "^4.0.2"

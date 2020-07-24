@@ -1,0 +1,35 @@
+.c-news {
+  &__contentslist {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+  }
+
+  &__contentItem {
+    text-align: left;
+    background-color: #fff;
+    height: 260px;
+    margin-right: 30px;
+    width: calc(34.5% - 30px);
+
+    &--date {
+      padding: 15px 15px 0;
+      font-size: 12px;
+      color: #666666;
+    }
+
+    &--title {
+      padding: 0 15px;
+    }
+
+    &--img {
+      height: 50%;
+      width: 100%;
+    }
+
+    &:nth-child(3) {
+      margin-right: 0;
+    }
+  }
+}

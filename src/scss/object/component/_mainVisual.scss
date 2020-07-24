@@ -1,0 +1,24 @@
+.c-mainVisual {
+  background: url(../img/news_mainv.png);
+  background-size: 2280px;
+  background-position: -866px 862px;
+  color: #fff;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 58px;
+  }
+
+  &__info {
+    font-size: 16.7px;
+  }
+
+  &__heading {
+    font-size: 45px;
+  }
+
+  &__day {
+    font-size: 26px;
+  }
+}

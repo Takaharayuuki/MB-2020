@@ -1,0 +1,31 @@
+<% var title = "NEWS"%><% var path = ".."; %> <%- include("../templates/_head",{title: title , path:
+path}); %>
+<!-- l-header-wrap -->
+<%- include("../templates/_header"); %>
+<!-- c-mainVisual -->
+<%- include("../templates/_mainVisual"); %>
+<!-- c-mainVisual -->
+<div class="l-main-wrap">
+  <a class="c-button is-cmv">チケット予約サイトへ</a>
+  <div class="l-inner-wrap">
+    <!-- c-breadclumb -->
+    <div class="c-breadclumb">
+      <p>ホーム > news</p>
+    </div>
+    <!-- c-breadclumb -->
+    <div class="p-news__container">
+      <h1 class="c-top-contents__heading">NEWS</h1>
+      <!-- c-news-contents -->
+      <% for(var i = 0; i < 3; i++) { %> <%- include("../templates/_news-contents",{path: path}); %>
+      <% } %>
+      <!-- c-news-contents -->
+      <!-- c-pagination -->
+      <%- include ("../templates/_pagination"); %>
+      <!-- c-pagination -->
+      <!-- c-schedule -->
+      <%- include ("../templates/_schedule"); %>
+      <!-- c-schedule -->
+    </div>
+  </div>
+</div>
+<%- include("../templates/_footer"); %>

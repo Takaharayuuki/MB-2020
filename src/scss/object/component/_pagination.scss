@@ -1,0 +1,18 @@
+.c-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+
+  &__num {
+    margin-right: 9px;
+    padding: 5px 10px;
+    background-color: #1a1a1a;
+    color: #f4d102;
+  }
+
+  &__next {
+    padding: 3px 5px;
+    border: 2px solid #1a1a1a;
+  }
+}

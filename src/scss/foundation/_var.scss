@@ -42,6 +42,13 @@ $breakpoints: (
 	margin: 0 auto;
 	height: inherit;
 
+	&--story {
+		max-width: 810px;
+		padding-top: 30px;
+		margin: 0 auto;
+		height: inherit;
+	}
+
 	@include mq('tab') {
 		padding-left: $padding-tab;
 		padding-right: $padding-tab;

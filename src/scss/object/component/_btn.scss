@@ -1,13 +1,76 @@
 .c-button {
 	display: inline-block;
-	background: $color-main;
+	background: $btn-color;
 	color: #fff;
 	text-align: center;
-	padding: 1em 3em;
-	font-size: $font-size-base;
-	font-weight: 700;
+	padding: 24px 3%;
+	font-size: 16px;
 	text-decoration: none;
 	box-shadow: 0 3px 6px rgba(#000, 0.16);
 	cursor: pointer;
 	transition: all 0.3s ease 0s;
+
+	&:hover {
+		opacity: $hover-opacity;
+	}
+
+	&--clear {
+		position: absolute;
+		bottom: 30px;
+		left: 46%;
+		display: inline-block;
+		border: 5px solid $btn-color;
+		background: $color-background-base;
+		color: $btn-color;
+		text-align: center;
+		padding: 7px 1.7%;
+		font-size: 16px;
+		font-weight: bold;
+		text-decoration: none;
+		box-shadow: 0 3px 6px rgba(#000, 0.16);
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+
+		&:hover {
+		opacity: $hover-opacity;
+	}
+		}
+}
+
+.is-large {
+	position: absolute;
+	top: -40px;
+	right: 110px;
+}
+
+.is-small {
+	position: absolute;
+	right: 0;
+	padding: 13px;
+}
+
+.is-story {
+	position: absolute;
+	right: 0;
+	bottom: -60px;
+	padding: 11px 15px;
+}
+
+.is-comments {
+	position: absolute;
+	right: 2%;
+	bottom: 13px;
+	padding: 11px 20px;
+}
+
+.is-schedule-br {
+  margin-right: 30px;
+  background-color: #603813;
+}
+
+.is-cmv {
+  position: absolute;
+  top: -30px;
+  right: 240px;
+  padding: 13px;
 }

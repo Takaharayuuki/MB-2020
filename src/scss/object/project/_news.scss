@@ -2,9 +2,91 @@
   p-news
 ---------------------------------------------------- */
 .p-news {
-
   &__container {
-    position: relative;
     text-align: center;
+  }
+
+  &__contents {
+    &--titleBox {
+      text-align: left;
+      margin-top: -7px;
+      padding: 13px 30px;
+      background-color: #1a1a1a;
+      color: #fff;
+    }
+
+    &--day {
+      font-size: 12px;
+    }
+
+    &--title {
+      font-size: 26px;
+    }
+
+    &--textBox {
+      text-align: left;
+      padding: 29px;
+      margin-bottom: 25px;
+      background-color: $color-background-base;
+    }
+
+    &--text {
+      &--large {
+        font-size: 22px;
+        font-weight: bold;
+      }
+
+      &--mid {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+
+    &__prev {
+      display: inline-block;
+      text-align: left;
+      display: flex;
+    }
+
+    &__next {
+      display: inline-block;
+      text-align: right;
+      display: flex;
+    }
+
+    &__textBox {
+      max-width: 345px;
+    }
+
+    &__icon {
+      background-color: #1a1a1a;
+      color: #f1c201;
+      border-radius: 999px;
+      padding: 3px 9px;
+      height: 32px;
+      margin-right: 12px;
+
+      &--next {
+        background-color: #1a1a1a;
+        color: #f1c201;
+        border-radius: 999px;
+        padding: 3px 9px;
+        height: 32px;
+        margin-left: 12px;
+      }
+    }
+
+    &__day {
+      font-size: 12px;
+    }
+
+    &__title {
+      font-size: 14px;
+    }
   }
 }

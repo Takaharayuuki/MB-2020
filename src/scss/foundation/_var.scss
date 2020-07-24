@@ -9,7 +9,6 @@ $color-background-base: #FFFFFFE6; // 背景色
 $color-text-base: #301F1B; // テキスト色
 $hover-opacity: 0.6; // 透過度
 $base-red: #C63205;
-$base-white: #FFFFFF;
 $base-black: #333333;
 $menu-color: #421F15;
 $btn-color: #C63205;
@@ -38,8 +37,8 @@ $breakpoints: (
 }
 
 .l-inner-wrap {
-	width: $layout-width-inner;
-	max-width: 100%;
+  max-width: 810px;
+  padding-top: 60px;
 	margin: 0 auto;
 	height: inherit;
 

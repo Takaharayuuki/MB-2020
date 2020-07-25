@@ -672,6 +672,7 @@ a {
   width: 100%;
   background: url(../img/story_bg_01.png);
   background-size: cover;
+  background-position: center top;
 }
 
 .p-story__topContent--header {
@@ -728,25 +729,25 @@ a {
 
 .p-story__mainContents--img {
   background: url(../img/story_bg_02.png);
-  background-size: cover;
+  background-size: 800px;
   background-repeat: no-repeat;
-  background-position: 200px -50px;
+  background-position: 80% -6%;
   height: 325px;
 }
 
 .p-story__mainContents--secondImg {
   background: url(../img/story_bg_03.png);
-  background-size: cover;
+  background-size: 600px;
   background-repeat: no-repeat;
-  background-position: -400px -400px;
+  background-position: 24% 46%;
   height: 325px;
 }
 
 .p-story__mainContents--thirdImg {
   background: url(../img/story_bg_04.png);
-  background-size: cover;
+  background-size: 600px;
   background-repeat: no-repeat;
-  background-position: 200px -400px;
+  background-position: 90% 46%;
   height: 325px;
 }
 

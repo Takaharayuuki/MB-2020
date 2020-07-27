@@ -1,0 +1,53 @@
+<% var title = "NEWS"%><% var path = "..";  %>  <%- include("../templates/_head",{title: title , path: path}); %>
+<!-- l-header-wrap -->
+<%- include("../templates/_header",{ path: path } ); %>
+<!-- mainVisual -->
+<%- include("../templates/_mainVisual"); %>
+<!-- mainVisual -->
+<div class="l-main-wrap">
+  <a class="c-button is-cmv">チケット予約サイトへ</a>
+  <div class="l-inner-wrap">
+     <!-- c-breadclumb -->
+     <div class="c-breadclumb">
+      <p>ホーム > お問い合わせ</p>
+    </div>
+    <!-- c-breadclumb -->
+    <div class="p-inquiry-success__container">
+      <h1 class="c-top-contents__heading">INQUIRY</h1>
+      <div class="p-inquiry-success__box">
+        <p class="p-inquiry-success__text">お問い合わせありがとうございました。<br>メッセージは正常に送信されました</p>
+      </div>
+    </div>
+    <section>
+      <div class="l-inner-wrap">
+        <div class="p-top-news__container">
+          <a class="c-button is-small">ニュース一覧へ</a>
+          <h1 class="c-top-contents__heading">LATEST NEWS</h1>
+          <!-- c-news__contents -->
+          <%- include ("../templates/_news-contents", {path: path}); %>
+          <!-- c-news__contents -->
+          <ul class="p-top-news__contents-SubList">
+            <li class="p-top-news__contentsSubItem">
+              <img class="p-top-news__contentsSubItem--img" src="../src/img/top_news_02.png" alt="" />
+              <div class="p-top-news__contentsSubItem__textBox">
+                <p class="p-top-news__contentsSubItem--date">2019.9.30</p>
+                <p class="p-top-news__contentsSubItem--title">ニュースのタイトルが入ります。</p>
+              </div>
+            </li>
+            <li class="p-top-news__contentsSubItem">
+              <img class="p-top-news__contentsSubItem--img" src="../src/img/top_news_02.png" alt="" />
+              <div class="p-top-news__contentsSubItem__textBox">
+                <p class="p-top-news__contentsSubItem--date">2019.9.30</p>
+                <p class="p-top-news__contentsSubItem--title">ニュースのタイトルが入ります。</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- c-schedule -->
+    <%- include ("../templates/_schedule"); %>
+    <!-- c-schedule -->
+  </div>
+</div>
+<%- include("../templates/_footer"); %>

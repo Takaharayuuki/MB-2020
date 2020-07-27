@@ -1,3 +1,47 @@
 <% var title = "NEWS"%><% var path = "..";  %>  <%- include("../templates/_head",{title: title , path: path}); %>
 <!-- l-header-wrap -->
-<%- include("../templates/_header",{ path: path } ); %> <%- include("../templates/_footer"); %>
+<%- include("../templates/_header",{ path: path } ); %>
+<!-- mainVisual -->
+<%- include("../templates/_mainVisual"); %>
+<!-- mainVisual -->
+<div class="l-main-wrap">
+  <a class="c-button is-cmv">チケット予約サイトへ</a>
+  <div class="l-inner-wrap">
+     <!-- c-breadclumb -->
+     <div class="c-breadclumb">
+      <p>ホーム > お問い合わせ</p>
+    </div>
+    <!-- c-breadclumb -->
+    <div class="p-inquiry__container">
+      <h1 class="c-top-contents__heading">INQUIRY</h1>
+      <div class="p-inquiry__box">
+        <p class="p-inquiry__text">小池博史ブリッジプロジェクトにご興味を持っていただきまして、ありがとうございます。 公演に関するお問い合わせ、公演・ワークショップのご依頼など、 お電話（03-3385-2066）か、下記フォームよりお気軽にお問い合わせください。</p>
+        <form class="p-inquiry__formContainer" action="/" method="post">
+          <div class="p-inquiry__formBox">
+            <label for="name">お名前</label>
+            <input class="p-inquiry__input" type="text" id="name" name="name">
+          </div>
+          <div class="p-inquiry__formBox">
+            <label for="tel">電話番号</label>
+            <input class="p-inquiry__input" type="tel" id="tel" neme="tel">
+          </div>
+          <div class="p-inquiry__formBox">
+            <label for="email">メールアドレス</label>
+            <input class="p-inquiry__input" type="mail" id="email" neme="email">
+          </div>
+          <div class="p-inquiry__formBox">
+            <label class="p-inquiry__textBox--label" for="message">内容</label>
+            <textarea class="p-inquiry__textBox" name="message" id="message" cols="30" rows="10"></textarea>
+          </div>
+          <div class="p-inquiry__formBox--btn">
+            <button class="c-button is-form">送信</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- c-schedule -->
+    <%- include ("../templates/_schedule"); %>
+    <!-- c-schedule -->
+  </div>
+</div>
+<%- include("../templates/_footer"); %>

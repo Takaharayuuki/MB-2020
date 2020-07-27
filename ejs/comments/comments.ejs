@@ -1,4 +1,5 @@
-<% var title = "NEWS"%><% var path = "..";  %>  <%- include("../templates/_head",{title: title , path: path}); %>
+<% var title = "NEWS"%><% var path = ".."; %> <%- include("../templates/_head",{title: title , path:
+path}); %>
 <!-- l-header-wrap -->
 <%- include("../templates/_header",{ path: path } ); %>
 <!-- mainVisual -->
@@ -14,12 +15,12 @@
     <!-- c-breadclumb -->
     <div class="p-comments__container">
       <h1 class="c-top-contents__heading">COMMENTS</h1>
-      <h2 class="p-comments__subHeading">舞台関係者のみならず各界著名人からコメントが届いています！</h2>
+      <h2 class="p-comments__subHeading">
+        舞台関係者のみならず各界著名人からコメントが届いています！
+      </h2>
       <!-- comments-contents -->
       <div class="c-comments__contents">
-        <h2 class="c-comments__contents--title">
-          京都佛立ミュージアム館長 <span>長松清潤</span>
-        </h2>
+        <h2 class="c-comments__contents--title">京都佛立ミュージアム館長 <span>長松清潤</span></h2>
         <p class="c-comments__contents--text">
           「文に非ず、其の義に非ず、唯だ一部の意のみ。」
           まずこの聖句が浮かんだ。境界線に立つ人類。超越する意志。小池博史氏の心象が生み出したアバターが乱舞しながら深層意識に波紋を起こしてゆく。
@@ -29,24 +30,23 @@
       <div class="p-comments__cards">
         <ul class="p-comments__cardsList">
           <% for(var i = 0; i < 12; i++) { %>
-            <li class="p-comments__card">
-              <h2 class="p-comments__card--name">今福龍太</h2>
-              <p class="p-comments__card--job">文化人類学者</p>
-              <div class="p-comments__card--textBox">
-                <p class="p-comments__card--text">蝶は風を受けて飛ぶ。いやむしろ、風を切って飛ぶ。いやさらにいえば、みずから風を孕み風を生み出す。 吹きすさび循環する大風のような物語。小池舞台はそんな物語を生成する未知なる蝶の飛翔だ。</p>
-              </div>
-            </li>
+          <li class="p-comments__card">
+            <h2 class="p-comments__card--name">今福龍太</h2>
+            <p class="p-comments__card--job">文化人類学者</p>
+            <div class="p-comments__card--textBox">
+              <p class="p-comments__card--text">
+                蝶は風を受けて飛ぶ。いやむしろ、風を切って飛ぶ。いやさらにいえば、みずから風を孕み風を生み出す。
+                吹きすさび循環する大風のような物語。小池舞台はそんな物語を生成する未知なる蝶の飛翔だ。
+              </p>
+            </div>
+          </li>
           <% } %>
-
         </ul>
       </div>
-
       <!-- c-schedule -->
       <%- include ("../templates/_schedule"); %>
       <!-- c-schedule -->
     </div>
   </div>
 </div>
-
-
 <%- include("../templates/_footer"); %>

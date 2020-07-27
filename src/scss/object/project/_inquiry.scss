@@ -1,0 +1,61 @@
+/* -------------------------------------------------
+  p-inquiry
+---------------------------------------------------- */
+.p-inquiry {
+
+  &__container {
+    text-align: center;
+  }
+
+  &__text {
+    font-size: 18px;
+    margin-bottom: 21px;
+  }
+
+  &__box {
+    text-align: left;
+    padding: 30px 30px 34px 30px;
+    background: rgba(255, 255, 255, 0.29);
+  }
+
+  &__formContainer {
+    text-align: right;
+  }
+
+  &__formBox {
+    position: relative;
+    margin-bottom: 15px;
+
+    > label {
+      vertical-align: baseline;
+      margin-right: 12px;
+      font-weight: bold;
+    }
+
+    &--btn {
+      text-align: center;
+    }
+  }
+
+  &__input {
+    width: 520px;
+    height: 45px;
+    background-color: #FFFFFF;
+    opacity: 0.7;
+  }
+
+  &__textBox {
+    background-color: #FFFFFF;
+    opacity: 0.7;
+    width: 520px;
+    height: 165px;
+
+    &--label {
+      position: absolute;
+      left: 24%;
+      bottom: 46%;
+    }
+  }
+
+
+}

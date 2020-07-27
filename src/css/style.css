@@ -334,10 +334,34 @@ a {
 
 .is-story {
   position: absolute;
-  top: 100px;
+  top: 260px;
   height: 40px;
   font-size: 14px;
   padding: 9px;
+}
+
+.c-comments__contents {
+  position: relative;
+  padding: 40px 30px;
+  text-align: left;
+  background-image: url("../img/top_comments.png");
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.c-comments__contents--title {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.c-comments__contents--title > span {
+  font-size: 26px;
+}
+
+.c-comments__contents--text {
+  font-size: 14px;
+  max-width: 420px;
 }
 
 .c-footer {
@@ -539,6 +563,57 @@ a {
 /*// -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------*/
+/* -------------------------------------------------
+  p-comments
+---------------------------------------------------- */
+.p-comments__container {
+  text-align: center;
+}
+
+.p-comments__subHeading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 41px;
+}
+
+.p-comments__cardsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.p-comments__card {
+  height: 250px;
+  width: calc(34.5% - 30px);
+  margin-right: 30px;
+}
+
+.p-comments__card--name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.p-comments__card--job {
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.p-comments__card--text {
+  font-size: 15px;
+}
+
+.p-comments__card--textBox {
+  text-align: left;
+}
+
+.p-comments__card:nth-child(3n) {
+  margin-right: 0;
+}
+
 /* -------------------------------------------------
   p-news-index
 ---------------------------------------------------- */
@@ -945,6 +1020,7 @@ a {
   p-top-comments
 ---------------------------------------------------- */
 .p-top-comments__container {
+  position: relative;
   text-align: center;
   padding-bottom: 250px;
 }
@@ -952,30 +1028,6 @@ a {
 .p-top-comments__lead {
   font-size: 24px;
   margin-bottom: 32px;
-}
-
-.p-top-comments__contents {
-  position: relative;
-  padding: 40px 30px;
-  text-align: left;
-  background-image: url("../img/top_comments.png");
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-}
-
-.p-top-comments__contents--title {
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.p-top-comments__contents--title > span {
-  font-size: 26px;
-}
-
-.p-top-comments__contents--text {
-  font-size: 14px;
-  max-width: 420px;
 }
 
 /* -------------------------------------------------

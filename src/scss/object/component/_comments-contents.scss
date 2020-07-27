@@ -1,0 +1,26 @@
+.c-comments {
+
+  &__contents {
+    position: relative;
+    padding: 40px 30px;
+    text-align: left;
+    background-image: url('../img/top_comments.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+
+    &--title {
+      font-size: 20px;
+      margin-bottom: 15px;
+
+      > span {
+        font-size: 26px;
+      }
+    }
+
+    &--text {
+      font-size: 14px;
+      max-width: 420px;
+    }
+  }
+}

@@ -31,19 +31,16 @@
       position: relative;
       display: flex;
       justify-content: space-between;
+      align-items: flex-end;
       margin-bottom: 88px;
     }
 
-    &__title > h1 {
-      font-size: 45px;
+    &--title {
+      width: 65%;
     }
 
-    &__title > p {
-      font-size: 16.7px;
-    }
-
-    &__day {
-      font-size: 26px;
+    &--day {
+      width: 29%;
     }
 
     &--bottom {

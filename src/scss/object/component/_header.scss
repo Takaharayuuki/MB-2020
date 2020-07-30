@@ -1,5 +1,5 @@
 .c-header-nav {
-
+  font-weight: bold;
   &__list {
     display: flex;
     justify-content: center;
@@ -20,6 +20,10 @@
 
     &:hover {
       opacity: $hover-opacity;
+    }
+
+    &:nth-child(6) {
+      margin-right: 0;
     }
   }
 }

@@ -32,4 +32,39 @@
       margin-right: 0;
     }
   }
+
+  @include mq(sp) {
+    &__contentslist {
+      display: block;
+      justify-content: center;
+      padding: 60px ;
+
+    }
+
+    &__contentItem {
+      background-color: #fff;
+      height: auto;
+      width: 100%;
+      margin-bottom: 20px;
+
+      &--date {
+        font-size: 12px;
+        color: #666666;
+
+      }
+
+      &--title {
+        padding: 0 15px;
+        font-weight: bold;
+        padding-bottom: 10px;
+      }
+
+      &--img {
+        height: 50%;
+        width: 100%;
+      }
+    }
+
+
+  }
 }

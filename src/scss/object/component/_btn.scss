@@ -3,7 +3,7 @@
 	background: $btn-color;
 	color: #fff;
 	text-align: center;
-	padding: 24px 3%;
+  padding: 0.6em 1em;
 	font-size: 16px;
 	text-decoration: none;
 	box-shadow: 0 3px 6px rgba(#000, 0.16);
@@ -23,7 +23,7 @@
 		background: $color-background-base;
 		color: $btn-color;
 		text-align: center;
-		padding: 7px 1.7%;
+		padding: 0.6em 1em;
 		font-size: 16px;
 		font-weight: bold;
 		text-decoration: none;
@@ -38,16 +38,25 @@
 }
 
 .is-large {
+  z-index: 1;
 	position: absolute;
-	top: -40px;
-	right: 110px;
+	bottom: -78px;
+	right: 0px;
 }
 
 .is-small {
 	position: absolute;
 	right: 0;
-	padding: 13px;
+  padding: 13px;
+  @include mq(sp) {
+    position: absolute;
+    right: 41%;
+    bottom: 0;
+    padding: 13px;
+  }
 }
+
+
 
 .is-story {
 	position: absolute;
@@ -71,16 +80,22 @@
 .is-cmv {
   position: absolute;
   top: -30px;
-  right: 240px;
+  right: 29%;
   padding: 13px;
 }
 
 .is-story {
   position: absolute;
-  top: 260px;
+  bottom: 47px;
+  right: 24%;
   height: 40px;
   font-size: 14px;
   padding: 9px;
+  @include mq(sp) {
+    position: absolute;
+    right: 43%;
+    bottom: 47px;
+  }
 }
 
 .is-form {

@@ -13,5 +13,14 @@
   &--story {
     font-size: 43px;
     font-weight: bold;
+
+  }
+
+  @include mq(tab) {
+    font-size: 35px;
+  }
+
+  @include mq(sp) {
+    font-size: 30px;
   }
 }

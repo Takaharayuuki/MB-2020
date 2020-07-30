@@ -7,18 +7,15 @@
   &__wrap {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 60px;
     padding-bottom: 58px;
   }
 
-  &__info {
-    font-size: 16.7px;
+  &__title {
+    max-width: 85%;
   }
-
-  &__heading {
-    font-size: 45px;
-  }
-
-  &__day {
-    font-size: 26px;
+  &__schedule {
+    max-width: 100%;
   }
 }

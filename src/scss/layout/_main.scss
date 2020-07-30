@@ -1,5 +1,12 @@
 .l-main-wrap {
   position: relative;
-  background-image: url("../img/top_bg.png");
+  background-image: url('../img/top_bg.png');
   margin: auto;
+  padding-top: 60px;
+
+  &--story {
+    position: relative;
+    background-image: url('../img/top_bg.png');
+    margin: auto;
+  }
 }

@@ -37,15 +37,44 @@ $breakpoints: (
 }
 
 .l-inner-wrap {
-  max-width: 810px;
+  max-width: 1140px;
 	margin: 0 auto;
 	height: inherit;
 
 	&--story {
-		max-width: 810px;
+		max-width: 1140px;
 		padding-top: 30px;
 		margin: 0 auto;
-		height: inherit;
+    height: inherit;
+    @include mq('tab') {
+      padding-left: $padding-tab;
+      padding-right: $padding-tab;
+    }
+
+    @include mq('sp') {
+      padding-left: $padding-sp;
+      padding-right: $padding-sp;
+    }
+	}
+
+	.hidden-pc {
+		@include mq('pc') {
+			display: none;
+		}
+	}
+
+	// タブレットだけ非表示
+	.hidden-tab {
+		@include mq('tab-only') {
+			display: none;
+		}
+	}
+
+	// スマホだけ非表示
+	.hidden-sp {
+		@include mq('sp') {
+			display: none;
+		}
 	}
 
 	@include mq('tab') {

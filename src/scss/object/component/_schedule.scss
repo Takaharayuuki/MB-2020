@@ -36,4 +36,22 @@
     text-align: center;
   }
 
+  @include mq(sp) {
+    &__contents {
+      display: block;
+
+      &--date {
+        margin-bottom: 10px;
+      }
+
+      &--time {
+        margin-bottom: 10px;
+      }
+
+      &--venue {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
 }

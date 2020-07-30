@@ -18,4 +18,27 @@
   &__schedule {
     max-width: 100%;
   }
+  @include mq(sp) {
+    &__wrap {
+      display: block;
+      padding-top: 60px;
+      padding-bottom: 58px;
+
+    }
+
+    &__title-container {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    &__schedule-container {
+      text-align: center;
+    }
+    &__title {
+      max-width: 85%;
+    }
+    &__schedule {
+      max-width: 55%;
+    }
+  }
 }

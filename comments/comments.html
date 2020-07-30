@@ -15,37 +15,37 @@
         <li class="c-header-nav__listItem">
           <a href="/">
             <p class="c-header-nav__listItem--ruby">トップ</p>
-            <p class="c-header-nav__listItem--menu">TOP</p>
+            <p class="c-header-nav__listItem--menu hidden-sp">TOP</p>
           </a>
         </li>
         <li class="c-header-nav__listItem">
           <a href="../news/news_index.html">
             <p class="c-header-nav__listItem--ruby">ニュース</p>
-            <p class="c-header-nav__listItem--menu">NEWS</p>
+            <p class="c-header-nav__listItem--menu hidden-sp">NEWS</p>
           </a>
         </li>
         <li class="c-header-nav__listItem">
           <a href="../story/story.html">
             <p class="c-header-nav__listItem--ruby">ストーリー</p>
-            <p class="c-header-nav__listItem--menu">STORY</p>
+            <p class="c-header-nav__listItem--menu hidden-sp">STORY</p>
           </a>
         </li>
         <li class="c-header-nav__listItem">
           <a href="../comments/comments.html">
             <p class="c-header-nav__listItem--ruby">著名人コメント</p>
-            <p class="c-header-nav__listItem--menu">COMMNETS</p>
+            <p class="c-header-nav__listItem--menu hidden-sp">COMMNETS</p>
           </a>
         </li>
         <li class="c-header-nav__listItem">
           <a href="../cast/cast.html">
             <p class="c-header-nav__listItem--ruby">キャスト</p>
-            <p class="c-header-nav__listItem--menu">CAST</p>
+            <p class="c-header-nav__listItem--menu hidden-sp">CAST</p>
           </a>
         </li>
         <li class="c-header-nav__listItem">
           <a href="../inquiry/inquiry.html">
             <p class="c-header-nav__listItem--ruby">問い合わせ</p>
-            <p class="c-header-nav__listItem--menu">INQUIRY</p>
+            <p class="c-header-nav__listItem--menu hidden-sp">INQUIRY</p>
           </a>
         </li>
       </ul>
@@ -81,12 +81,31 @@
         舞台関係者のみならず各界著名人からコメントが届いています！
       </h2>
       <!-- comments-contents -->
-      <div class="c-comments__contents">
+      <!-- PC版 -->
+      <div class="c-comments__contents hidden-sp">
         <h2 class="c-comments__contents--title">京都佛立ミュージアム館長 <span>長松清潤</span></h2>
         <p class="c-comments__contents--text">
           「文に非ず、其の義に非ず、唯だ一部の意のみ。」
           まずこの聖句が浮かんだ。境界線に立つ人類。超越する意志。小池博史氏の心象が生み出したアバターが乱舞しながら深層意識に波紋を起こしてゆく。
         </p>
+      </div>
+      <!-- SP版 -->
+      <div class="c-comments__contents-sp hidden-tab hidden-pc">
+        <img src="../src/img/top_comments.png" alt="住職" />
+        <div class="c-comments__contents-sp__container">
+          <div class="c-comments__contents-sp__title">
+            <p>京都佛立ミュージアム館長</p>
+            <span>長松清潤 </span>
+          </div>
+          <p class="c-comments__contents-sp__text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo ea perspiciatis
+            inventore commodi sapiente, repellat consequuntur eveniet recusandae sed suscipit veniam
+            culpa temporibus nisi debitis officia, deserunt ex aperiam itaque! Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Voluptatibus, ratione fugit earum atque facilis
+            maxime accusantium, fuga quidem vel quis id cupiditate quas. Quisquam ab similique in
+            quia suscipit error!
+          </p>
+        </div>
       </div>
       <!-- comments-contents -->
       <div class="p-comments__cards">
@@ -259,7 +278,7 @@
       </div>
     </div>
     <div class="c-top-schedule__btnBox">
-      <a class="c-button is-schedule-br">お問い合わせはこちら</a>
+      <a class="c-button is-schedule-br" href="../inquiry/inquiry.html">お問い合わせはこちら</a>
       <a class="c-button">チケット予約サイトへ</a>
     </div>
   </div>

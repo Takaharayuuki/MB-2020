@@ -35,6 +35,14 @@
       margin-bottom: 88px;
     }
 
+    @include mq(sp) {
+      &--header {
+        position: relative;
+        display: block;
+        margin-bottom: 88px;
+      }
+    }
+
     &--title {
       width: 65%;
     }
@@ -42,10 +50,25 @@
     &--day {
       width: 29%;
     }
+    @include mq(sp) {
+      &--title {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+      }
+
+      &--day {
+       margin: auto;
+       width: 50%;
+      }
+    }
 
     &--bottom {
+      @include mq(sp) {
+      margin-bottom: 60px;
+      }
       &--breadclumb {
-        font-size: 12px;
+        font: 12px;
         margin-bottom: 27px;
       }
 
@@ -61,11 +84,18 @@
         display: flex;
         justify-content: flex-end;
 
+        @include mq(sp) {
+        display: block;
+        }
         &--text {
-          font-size: 12px;
-          max-width: 389px;
-          max-height: 205px;
+
+          width: 61%;
+          max-height: 197px;
           overflow: hidden;
+
+          @include mq(sp) {
+            margin: auto;
+          }
         }
       }
     }
@@ -98,18 +128,22 @@
 
     &--text {
       padding: 60px 0;
-      font-size: 12px;
-      max-width: 389px;
-      max-height: 285px;
+      width: 61%;
+      max-height: 281px;
       overflow: hidden;
+      @include mq(sp) {
+        margin: auto;
+      }
     }
 
     &--secondText {
       padding: 60px 0;
-      font-size: 12px;
-      max-width: 389px;
-      max-height: 285px;
+      width: 61%;
+      max-height: 281px;
       overflow: hidden;
+      @include mq(sp) {
+        margin: auto;
+      }
     }
   }
 

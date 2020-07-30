@@ -10,30 +10,42 @@
   &__bg {
     z-index: 1;
     position: absolute;
-    top: 300px;
+    top: 256px;
     background-color: $color-background-base;
-    height: 620px;
+    height: 460px;
     width: 100%;
+    @include mq(sp) {
+    display: none;
+    }
   }
 
   &__contentsBox {
     margin-bottom: 44px;
     margin-top: 17px;
     display: flex;
+    @include mq(sp) {
+    display: block;
+    }
   }
 
   &__content {
     z-index: 10;
     width: calc(34.5% - 30px);
     margin-right: 30px;
+    @include mq(sp) {
+      margin: auto;
+      width: 100%;
+      }
 
     &:nth-child(3) {
       margin-right: 0;
     }
 
     &--img {
+      height: 200px;
+      width: 200px;
       border-radius: 999px;
-      margin-bottom: 38px;
+      margin-bottom: 25px;
     }
 
     &--cast {
@@ -52,6 +64,9 @@
 
     &--text {
       font-size: 12px;
+      @include mq(sp) {
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -94,7 +109,7 @@
 
       &--text {
         font-size: 12px;
-        height: 99px;
+        height: 125px;
         overflow: hidden;
       }
 
@@ -111,6 +126,9 @@
   &__name {
     background-color: $color-background-base;
     padding-bottom: 35px;
+    @include mq(sp) {
+      display: none;
+    }
 
     &--cast {
       color: #666666;
@@ -125,9 +143,9 @@
   &__namelist {
     display: flex;
     flex-wrap: wrap;
-
+    padding-top: 40px;
     &--item {
-      width: calc(34.5% - 30px);
+      width: calc(34.2% - 30px);
       margin-right: 30px;
       text-align: center;
       margin-bottom: 30px;

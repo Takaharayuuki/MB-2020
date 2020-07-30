@@ -23,4 +23,33 @@
       max-width: 420px;
     }
   }
+
+  @include mq(sp) {
+    &__contents-sp {
+
+      > img {
+        vertical-align: bottom;
+      }
+
+      &__container {
+        padding: 20px;
+        text-align: left;
+        color: #fff;
+        background-color: black;
+      }
+
+      &__title {
+        font-size: 16.8px;
+        margin-bottom: 20px;
+
+        > span {
+          font-size: 28px;
+        }
+      }
+
+      &__text {
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
